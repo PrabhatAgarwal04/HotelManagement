@@ -29,19 +29,21 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Boolean isMatched = db.checkUser(userName.getText().toString(),password.getText().toString());
-               if (isMatched)
-               {
-                  Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
-                  startActivity(intent);
-               }
-               else {
-                   Toast toast = Toast.makeText(getApplicationContext(),
-                           "This is a message displayed in a Toast",
-                           Toast.LENGTH_SHORT);
-
-                   toast.show();
-               }
+//               Boolean isMatched = db.checkUser(userName.getText().toString(),password.getText().toString());
+//               if (isMatched)
+//               {
+//                  Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
+//                  startActivity(intent);
+//               }
+//               else {
+//                   Toast toast = Toast.makeText(getApplicationContext(),
+//                           "This is a message displayed in a Toast",
+//                           Toast.LENGTH_SHORT);
+//
+//                   toast.show();
+//               }
+                Intent it = new Intent(getApplicationContext(),RequestCodeActivity.class);
+                startActivity(it);
 
             }
         });

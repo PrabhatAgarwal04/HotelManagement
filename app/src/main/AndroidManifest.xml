@@ -20,7 +20,8 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".SendVerificatioCodeActivity" />
         <activity android:name=".RequestCodeActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AssignRoomActivity"></activity>
     </application>
 
 </manifest>
