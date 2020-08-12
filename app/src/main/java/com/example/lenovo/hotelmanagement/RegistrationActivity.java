@@ -21,6 +21,7 @@ public class RegistrationActivity extends AppCompatActivity {
         db = new DatabaseHelper(this);
         userName = (EditText)findViewById(R.id.email);
         password = (EditText)findViewById(R.id.password);
+        phone = findViewById(R.id.phone);
 //        confirmPassword = (EditText)findViewById(R.id.confirmPassword);
         register = (Button) findViewById(R.id.create);
 
@@ -28,7 +29,7 @@ public class RegistrationActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               db.addUser(userName.getText().toString(),password.getText().toString());
+               db.addUser(userName.getText().toString(),password.getText().toString(),phone.getText().toString());
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
 

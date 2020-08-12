@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -19,13 +20,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // User Table Columns names
     private static final String COLUMN_USER_ID = "user_id";
     private static final String COLUMN_USER_NAME = "user_name";
-    private static final String COLUMN_USER_EMAIL = "user_email";
+    private static final String COLUMN_PHONE = "user_email";
     private static final String COLUMN_USER_PASSWORD = "user_password";
 
     // create table sql query
     private String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "("
             + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_NAME + " TEXT,"
-            + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ")";
+            + COLUMN_PHONE + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ")";
 
     // drop table sql query
     private String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + TABLE_USER;
@@ -61,12 +62,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
      *
      * @param user
      */
-    public void addUser(String user, String password) {
+    public void addUser(String user, String password,String phone) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
         values.put(COLUMN_USER_NAME, user);
-        values.put(COLUMN_USER_EMAIL, "hello");
+        values.put(COLUMN_PHONE, phone);
         values.put(COLUMN_USER_PASSWORD, password);
 
         // Inserting Row
@@ -83,6 +84,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] selectionArgs = { username, password };
         Cursor cursor = db.query(TABLE_USER,columns,selection,selectionArgs,null,null,null);
         int count = cursor.getCount();
+//        cursor.moveToFirst();
+//        String phone =(cursor.getString(cursor.getColumnIndex(COLUMN_PHONE)));
+//        Log.d("number","phone"+phone);
+
         cursor.close();
         db.close();
 

@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                }
                else {
                    Toast toast = Toast.makeText(getApplicationContext(),
-                           "This is a message displayed in a Toast",
+                           "Wrong Username or Password",
                            Toast.LENGTH_SHORT);
                    toast.show();
                }
