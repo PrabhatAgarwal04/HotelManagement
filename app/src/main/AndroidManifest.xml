@@ -21,7 +21,11 @@
         <activity android:name=".SendVerificatioCodeActivity" />
         <activity android:name=".RequestCodeActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".AssignRoomActivity"></activity>
+        <activity android:name=".AssignRoomActivity" />
+        <activity android:name=".CheckInActivity" />
+        <activity android:name=".SearchScreenRoomActivity" />
+        <activity android:name=".RoomBookActivity" />
+        <activity android:name=".LastActivity"></activity>
     </application>
 
 </manifest>

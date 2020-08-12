@@ -50,6 +50,7 @@
                     android:layout_height="40dp"
                     android:background="@drawable/et_bg"
                     android:ems="10"
+                    android:paddingLeft="10dp"
                     android:inputType="textPersonName"
                     tools:layout_editor_absoluteX="128dp"
                     tools:layout_editor_absoluteY="5dp" />
@@ -79,14 +80,94 @@
                 <TextView
                     android:layout_width="283dp"
                     android:layout_height="30dp"
-                    android:text="Password"
+                    android:text="Date of Arrival"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="365dp" />
 
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/arrivalDate"
+                    android:layout_width="283dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_bg"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    tools:layout_editor_absoluteX="128dp"
+                    tools:layout_editor_absoluteY="5dp" />
+                <TextView
+                    android:layout_width="283dp"
+                    android:layout_height="30dp"
+                    android:text="Date of Departure"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="365dp" />
+
+                <EditText
+                    android:id="@+id/departureDate"
+                    android:layout_width="283dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_bg"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    tools:layout_editor_absoluteX="128dp"
+                    tools:layout_editor_absoluteY="5dp" />
+                <TextView
+                    android:layout_width="283dp"
+                    android:layout_height="30dp"
+                    android:text="Check In Time"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="365dp" />
+
+                <EditText
+                    android:id="@+id/checkIn"
+                    android:layout_width="283dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_bg"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    tools:layout_editor_absoluteX="128dp"
+                    tools:layout_editor_absoluteY="5dp" />
+                <TextView
+                    android:layout_width="283dp"
+                    android:layout_height="30dp"
+                    android:text="Date of Arrival"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="365dp" />
+
+                <EditText
+                    android:id="@+id/checkOut"
+                    android:layout_width="283dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_bg"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    tools:layout_editor_absoluteX="128dp"
+                    tools:layout_editor_absoluteY="5dp" />
+                <TextView
+                    android:layout_width="283dp"
+                    android:layout_height="30dp"
+                    android:text="Number of Adults"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="365dp" />
+
+                <EditText
+                    android:id="@+id/adults"
                     android:layout_width="283dp"
                     android:layout_height="40dp"
                     android:background="@drawable/et_bg"
@@ -117,7 +198,6 @@
                     android:paddingLeft="10dp"
                     android:inputType="textPersonName"
                     android:text=""
-                    android:textColor="@color/white"
                     tools:layout_editor_absoluteX="128dp" />
 
                 <TextView
@@ -136,6 +216,7 @@
                     android:layout_height="40dp"
                     android:background="@drawable/et_bg"
                     android:ems="10"
+                    android:paddingLeft="10dp"
                     android:inputType="textPersonName"
                     android:text=""
                     tools:layout_editor_absoluteX="128dp"
@@ -156,9 +237,9 @@
                     android:layout_height="40dp"
                     android:background="@drawable/et_bg"
                     android:ems="10"
+                    android:paddingLeft="10dp"
                     android:inputType="textPersonName"
                     android:text=""
-                    android:paddingLeft="10dp"
                     android:textColor="@color/white"
                     tools:layout_editor_absoluteX="128dp"
                     tools:layout_editor_absoluteY="5dp" />
@@ -167,7 +248,6 @@
                     android:layout_width="283dp"
                     android:layout_height="30dp"
                     android:text="Date of Birth"
-                    android:textColor="@color/white"
                     android:textSize="18sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="430dp" />
@@ -181,7 +261,6 @@
                     android:paddingLeft="10dp"
                     android:inputType="textPersonName"
                     android:text=""
-                    android:textColor="@color/white"
                     tools:layout_editor_absoluteX="128dp"
                     tools:layout_editor_absoluteY="5dp" />
 
@@ -207,14 +286,14 @@
 
 
                 <Button
-                    android:id="@+id/create"
+                    android:id="@+id/checkInButton"
                     android:layout_width="85dp"
                     android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
                     android:background="@drawable/btn_bg"
                     android:layout_gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:text="create"
                     android:textColor="@color/white"
+                    android:text="Check In"
                     tools:layout_editor_absoluteX="291dp"
                     tools:layout_editor_absoluteY="345dp" />
 
@@ -226,8 +305,9 @@
             android:id="@+id/textView15"
             android:layout_width="283dp"
             android:layout_height="35dp"
+
             android:layout_marginBottom="15dp"
-            android:text="REGISTRATION"
+            android:text="Submit"
             android:textColor="@color/white"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/scrollView2"

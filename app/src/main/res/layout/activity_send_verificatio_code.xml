@@ -10,7 +10,7 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/grad_bg"
         android:orientation="horizontal">
 
         <ImageView
@@ -74,8 +74,8 @@
             android:layout_below="@id/editTextCode"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="Sign In"
+            android:background="@drawable/grad_bg"
+            android:text="Verify"
             android:textAllCaps="false"
             android:textColor="#cdd8f1" />
 
