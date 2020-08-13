@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "169738979908",
+    "firebase_url": "https://hotelmanagement-a24c6.firebaseio.com",
+    "project_id": "hotelmanagement-a24c6",
+    "storage_bucket": "hotelmanagement-a24c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169738979908:android:879409754a4ba5fec68a11",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.hotelmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169738979908-1v45mokagkeict09j4qguvjlumsn8rfj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.hotelmanagement",
+            "certificate_hash": "61a254c752d64cd1aeefa7a615145833cf0126ba"
+          }
+        },
+        {
+          "client_id": "169738979908-legdfbnr0i4nkhlgdamk805on4lv57a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqarQ30znn5gN4ToLENZfw1aaS4FkSovY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169738979908-legdfbnr0i4nkhlgdamk805on4lv57a7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
